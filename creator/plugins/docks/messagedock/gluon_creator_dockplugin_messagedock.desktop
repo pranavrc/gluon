@@ -1,0 +1,43 @@
+[Desktop Entry]
+Encoding=UTF-8
+
+Name=Message Dock
+Name[de]=Nachrichten-Anzeige
+Name[en_GB]=Message Dock
+Name[es]=Anclaje de mensajes
+Name[et]=Teatedokk
+Name[fr]=Panneau de Messages
+Name[nds]=Bescheden-Andocker
+Name[pt]=Área de Mensagens
+Name[pt_BR]=Acoplador de mensagem
+Name[sv]=Meddelandepanel
+Name[uk]=Панель повідомлень
+Name[x-test]=xxMessage Dockxx
+Comment=Provides a Message browser dock plugin.
+Comment[de]=Ein Modul zum Anzeigen von Nachrichten.
+Comment[en_GB]=Provides a Message browser dock plugin.
+Comment[es]=Proporciona un complemento de anclaje de mensajes.
+Comment[et]=Teadetesirvija doki plugin.
+Comment[fr]=Affiche un panneau pour parcourir les messages.
+Comment[nds]=Stellt en Beschedenkieker as Andockmoduul praat.
+Comment[pt]=Oferece um 'plugin' para acoplar os navegadores de mensagens.
+Comment[pt_BR]=Oferece um plug-in para acoplar um navegador de mensagem.
+Comment[sv]=Tillhandahåller ett insticksprogram för meddelandebläddring.
+Comment[uk]=Додаток панелі перегляду повідомлень.
+Comment[x-test]=xxProvides a Message browser dock plugin.xx
+Icon=gluon
+
+Type=Service
+ServiceTypes=GluonCreator/Plugin
+
+X-KDE-Library=gluon_creator_dockplugin_messagedock
+X-KDE-GluonCreatorPluginVersion=1
+X-KDE-PluginInfo-Author=Arjen Hiemstra
+X-KDE-PluginInfo-Email=djfreestyler@gmail.com
+X-KDE-PluginInfo-Name=gluon_creator_dockplugin_messagedock
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=http://gluon.tuxfamily.org
+X-KDE-PluginInfo-Category=dock
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true

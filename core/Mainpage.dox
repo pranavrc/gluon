@@ -1,0 +1,19 @@
+/**
+@mainpage GluonCore
+
+GluonCore is a thin library which provides the ability to serialize and deserialize
+very easily an object hierarchy.
+
+@authors
+Arjen Hiemstra \<ahiemstra@heimr.nl\><br>
+Dan Leinir Tuthra Jensen \<admin@leinir.dk\>
+
+@licenses
+@lgpl
+
+*/
+
+// DOXYGEN_SET_PROJECT_NAME = GluonCore
+// DOXYGEN_SET_RECURSIVE = YES
+// DOXYGEN_EXCLUDE_PATTERNS = *private.h
+// vim:ts=4:sw=4:expandtab:filetype=doxygen

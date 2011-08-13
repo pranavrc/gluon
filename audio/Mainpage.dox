@@ -1,0 +1,20 @@
+/**
+@mainpage GluonAudio
+
+GluonAudio provides many convenience classes to easily use OpenAL in
+your game.
+
+@authors
+Sacha Schutz \<istdasklar@free.fr\><br>
+Guillaume Martres \<smarter@ubuntu.com\>
+
+@licenses
+@lgpl
+
+*/
+
+// DOXYGEN_SET_PROJECT_NAME = GluonAudio
+// DOXYGEN_SET_RECURSIVE = YES
+// DOXYGEN_EXCLUDE_PATTERNS = *private.h */examples/* */alure/*
+// DOXYGEN_REFERENCES = @currentdir@/../core
+// vim:ts=4:sw=4:expandtab:filetype=doxygen

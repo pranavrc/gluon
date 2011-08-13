@@ -1,0 +1,21 @@
+/**
+@mainpage GluonGraphics
+
+GluonGraphics is a graphics library based on OpenGL. It provides easy
+to use classes to set up OpenGL in your application.
+
+@authors
+Arjen Hiemstra \<ahiemstra@heimr.nl\><br>
+Sacha Schutz \<istdasklar@free.fr\><br>
+Giulio Camuffo \<giuliocamuffo@gmail.com\><br>
+
+@licenses
+@lgpl
+
+*/
+
+// DOXYGEN_SET_PROJECT_NAME = GluonGraphics
+// DOXYGEN_SET_RECURSIVE = YES
+// DOXYGEN_EXCLUDE_PATTERNS = *private.h *_p.h */examples/*
+// DOXYGEN_REFERENCES = @currentdir@/../core
+// vim:ts=4:sw=4:expandtab:filetype=doxygen

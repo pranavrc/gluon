@@ -1,0 +1,43 @@
+[Desktop Entry]
+Encoding=UTF-8
+
+Name=Properties Dock
+Name[de]=Eigenschaften-Anzeige
+Name[en_GB]=Properties Dock
+Name[es]=Anclaje de propiedades
+Name[et]=Omaduste dokk
+Name[fr]=Panneau de Propriétés
+Name[nds]=Egenschappen-Andocker
+Name[pt]=Área de Propriedades
+Name[pt_BR]=Acoplador de propriedades
+Name[sv]=Egenskapspanel
+Name[uk]=Панель властивостей
+Name[x-test]=xxProperties Dockxx
+Comment=Provides a Properties editor dock plugin.
+Comment[de]=Ein Anzeigemodul zur Bearbeitung der Eigenschaften.
+Comment[en_GB]=Provides a Properties editor dock plugin.
+Comment[es]=Proporciona un complemento de anclaje del editor de propiedades.
+Comment[et]=Omaduste redaktori doki plugin.
+Comment[fr]=Affiche un panneau pour éditer les Propriétés.
+Comment[nds]=Stellt en Egenschappeneditor as Andockmoduul praat.
+Comment[pt]=Oferece um 'plugin' de edição de propriedades.
+Comment[pt_BR]=Oferece um plug-in para acoplar um editor de propriedades.
+Comment[sv]=Tillhandahåller ett insticksprogram för egenskapsredigering.
+Comment[uk]=Додаток панелі редактора властивостей.
+Comment[x-test]=xxProvides a Properties editor dock plugin.xx
+Icon=gluon
+
+Type=Service
+ServiceTypes=GluonCreator/Plugin
+
+X-KDE-Library=gluon_creator_dockplugin_propertiesdock
+X-KDE-GluonCreatorPluginVersion=1
+X-KDE-PluginInfo-Author=Arjen Hiemstra
+X-KDE-PluginInfo-Email=djfreestyler@gmail.com
+X-KDE-PluginInfo-Name=gluon_creator_dockplugin_propertiesdock
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=http://gluon.tuxfamily.org
+X-KDE-PluginInfo-Category=dock
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true

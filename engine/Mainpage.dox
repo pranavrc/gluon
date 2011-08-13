@@ -1,0 +1,20 @@
+/**
+@mainpage GluonEngine
+
+GluonEngine provides all the necessary classes to build the structure of a game,
+like the game loop or the scene management.
+
+@authors
+Arjen Hiemstra \<ahiemstra@heimr.nl\><br>
+Dan Leinir Tuthra Jensen \<admin@leinir.dk\>
+
+@licenses
+@lgpl
+
+*/
+
+// DOXYGEN_SET_PROJECT_NAME = GluonEngine
+// DOXYGEN_SET_RECURSIVE = YES
+// DOXYGEN_EXCLUDE_PATTERNS = *private.h */components/* */assets/*
+// DOXYGEN_REFERENCES = @currentdir@/../core
+// vim:ts=4:sw=4:expandtab:filetype=doxygen
