@@ -3,9 +3,11 @@ cmake_minimum_required(VERSION 2.6)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_INSTALL_PREFIX}/share/kde4/apps/cmake/modules/)
 
-find_package(Qt4 REQUIRED)
-find_package(GluonCore REQUIRED)
-find_package(GluonEngine REQUIRED)
+if(NOT GLUON_BUILD_ALL)
+    find_package(Qt4 REQUIRED)
+    find_package(GluonCore REQUIRED)
+    find_package(GluonEngine REQUIRED)
+endif()
 
 set(_Init_LIB_SUFFIX "")
 if ("${QT_QTCORE_LIBRARY}" MATCHES lib64)
@@ -47,37 +49,37 @@ set(behaviorTreeComponent_SRCs
 
 qt4_automoc(${behaviorTreeComponent_SRCs}) 
 
-find_library(LIBBT
-    NAMES
-        libbtlib.so
-    PATHS
-        #c:/repo/smarts/src/lib/qtcreator-build/
-        /usr/local/lib/
-        #/usr/local/lib64/
-)
-message("-- Found libbtlib:" ${LIBBT})
+# find_library(LIBBT
+#     NAMES
+#         libbtlib.so
+#     PATHS
+#         #c:/repo/smarts/src/lib/qtcreator-build/
+#         /usr/local/lib/
+#         #/usr/local/lib64/
+# )
+# message("-- Found libbtlib:" ${LIBBT})
+# 
+# find_path(LIBBTPATH
+#     NAMES
+#         libbtlib.so
+#     PATHS
+#         #c:/repo/smarts/src/lib/qtcreator-build/
+#         /usr/local/lib/
+#         #/usr/local/lib64/
+# )
+# message("-- Found libbt's path:" ${LIBBTPATH})
 
-find_path(LIBBTPATH
-    NAMES
-        libbtlib.so
-    PATHS
-        #c:/repo/smarts/src/lib/qtcreator-build/
-        /usr/local/lib/
-        #/usr/local/lib64/
-)
-message("-- Found libbt's path:" ${LIBBTPATH})
-
-add_library(btlib SHARED IMPORTED)
-set_property(TARGET btlib PROPERTY IMPORTED_LOCATION ${LIBBT})
-set_property(TARGET btlib PROPERTY IMPORTED_IMPLIB ${LIBBT})
-
-add_definitions(-DMAKE_BTCOMPONENT_LIB)
-add_definitions(-DMAKE_GLUON_LIB)
-
-ADD_DEFINITIONS(${QT_DEFINITIONS})
-ADD_DEFINITIONS(-DQT_PLUGIN)
-ADD_DEFINITIONS(-DQT_NO_DEBUG)
-ADD_DEFINITIONS(-DQT_SHARED)
+# add_library(btlib SHARED IMPORTED)
+# set_property(TARGET btlib PROPERTY IMPORTED_LOCATION ${LIBBT})
+# set_property(TARGET btlib PROPERTY IMPORTED_IMPLIB ${LIBBT})
+# 
+# add_definitions(-DMAKE_BTCOMPONENT_LIB)
+# add_definitions(-DMAKE_GLUON_LIB)
+# 
+# ADD_DEFINITIONS(${QT_DEFINITIONS})
+# ADD_DEFINITIONS(-DQT_PLUGIN)
+# ADD_DEFINITIONS(-DQT_NO_DEBUG)
+# ADD_DEFINITIONS(-DQT_SHARED)
 
 add_library(gluon_plugin_asset_behaviortree SHARED ${behaviorTreeComponent_SRCs} )
 set_target_properties(gluon_plugin_asset_behaviortree PROPERTIES VERSION ${GLUON_VERSION_STRING} SOVERSION ${GLUON_VERSION_STRING} DEFINE_SYMBOL MAKE_BTCOMPONENT_LIB)
